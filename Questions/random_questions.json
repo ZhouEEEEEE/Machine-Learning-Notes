@@ -59,6 +59,19 @@
                         "Generative models are more flexible, but they are harder to train.",
                         "Discriminative models are less flexible, but they are easier to train."
             ]
+        },
+        {
+            "name": "Given a set of ground truths and 2 models how do you be confident that one model is better than another?",
+            "answer":["Accuracy: Calculate the accuracy of both models by comparing their predictions against the ground truths.",
+            "Precision and Recall: Precision measures the proportion of correctly predicted positive instances out of all predicted positive instances, while recall measures the proportion of correctly predicted positive instances out of all actual positive instances.",
+            "F1 Score: F1 score is the harmonic mean of precision and recall. It  is particularly useful when you want to find an optimal balance between the two metrics.",
+            "Area Under the Curve (AUC): The ROC curve plots the true positive rate against the false positive rate at various classification thresholds. The AUC summarizes the overall performance of the model, with higher values indicating better performance.",
+            "Mean Squared Error (MSE) or Root Mean Squared Error (RMSE): Working with regression models, we can compute the MSE or RMSE between the predicted values and the ground truths. These metrics quantify the average squared difference between predicted and actual values, with lower values indicating better performance.",
+            "Cross-Validation: By dividing the data into multiple subsets, training and evaluating the models on different combinations of these subsets, you can obtain a more robust evaluation of their generalization capabilities."
+        ]
+        },
+        {
+            
         }
     ]
 }
