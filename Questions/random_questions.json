@@ -1,0 +1,17 @@
+{
+    "division": "Basic Concept",
+    "Questions": [
+        {
+            "name": "What is overfitting?",
+            "answer": "Overfitting is when the model is too complex for the data, and it starts to learn the noise in the data rather than the signal.  This is a problem because the model will perform well on the training data, but will perform poorly on the test data."
+        },
+        {
+            "name": "What is underfitting?",
+            "answer": "Underfitting is when the model is too simple for the data, and it is unable to learn the signal in the data.  This is a problem because the model will perform poorly on both the training data and the test data."
+        },
+        {
+            "name": "What is the bias-variance tradeoff?",
+            "answer": "The bias-variance tradeoff is the tradeoff between the bias of the model and the variance of the model.  A model with high bias will perform poorly on the training data, while a model with high variance will perform poorly on the test data. The goal is to find a model that has low bias and low variance."
+        }
+    ]
+}
