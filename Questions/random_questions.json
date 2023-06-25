@@ -3,15 +3,62 @@
     "Questions": [
         {
             "name": "What is overfitting?",
-            "answer": "Overfitting is when the model is too complex for the data, and it starts to learn the noise in the data rather than the signal.  This is a problem because the model will perform well on the training data, but will perform poorly on the test data."
+            "answer": ["Overfitting is when the model is too complex for the data, and it starts to learn the noise in the data rather than the signal.", 
+                        "This is a problem because the model will perform well on the training data, but will perform poorly on the test data."]
         },
         {
             "name": "What is underfitting?",
-            "answer": "Underfitting is when the model is too simple for the data, and it is unable to learn the signal in the data.  This is a problem because the model will perform poorly on both the training data and the test data."
+            "answer": ["Underfitting is when the model is too simple for the data, and it is unable to learn the signal in the data.", 
+                         "This is a problem because the model will perform poorly on both the training data and the test data."]
         },
         {
             "name": "What is the bias-variance tradeoff?",
-            "answer": "The bias-variance tradeoff is the tradeoff between the bias of the model and the variance of the model.  A model with high bias will perform poorly on the training data, while a model with high variance will perform poorly on the test data. The goal is to find a model that has low bias and low variance."
+            "answer":  ["The term 'bias' means the average distance between the predicted values and the actual values.", 
+            "The term 'variance' means the average distance between the predicted values and the mean of the predicted values, which is the difference between models.", 
+            "The bias-variance tradeoff is the tradeoff between the bias of the model and the variance of the model.", 
+            "A model with high bias means that the model is too simple for the data, and it is unable to learn the signal in the data.",
+             "A model with high variance means that the model is too complex for the data, and it starts to learn the noise in the data rather than the signal.", 
+             "The word 'tradeoff' is used because as the bias of the model decreases, the variance of the model increases, and vice versa."]
+        },
+        {
+            "name": "What are possible ways to resolve overfitting?",
+            "answer": [
+                "Data Augmentation means adding more data to the training data. By doing this, the model will be able to learn the signal in the data better, and it will be less likely to learn the noise in the data.",
+                "Early Stopping means stopping the training of the model when the validation loss is hardly decreasing. By doing this, the model will be less likely to learn the noise in the data.",
+                "Regularization means adding a penalty term to the loss function.",
+                "Ensembling means combining the predictions of multiple models, including techniques such as bagging and boosting.",
+                "Adding dropout layers to the model means randomly dropping some neurons in the model during training."
+            ]
+        },
+        {
+            "name": "What is BAGGing?",
+            "answer": [
+                "BAGGing stands for Bootstrap AGGregation.",
+                "BAGGing is a technique used in ensembling.",
+                "BAGGing involves training multiple models on different subsets of the training data, and then combining the predictions of the models.",
+                "BAGGing is used to reduce the variance of the model."
+            ]
+        },
+        {
+            "name": "What is BOOSTing?",
+            "answer": ["The key idea behind BOOSTing is that each weak learner focuses on the instances that previous learners struggled with, effectively boosting the overall performance of the ensemble.",
+                        "The final prediction is a weighted combination of the predictions made by each weak learner, giving more weight to the more accurate models.",
+                        "BOOSTing primarily aims to reduce bias rather than variance.", 
+                        "The primary focus of BOOSTing algorithms, such as AdaBoost, is to create a strong predictive model by combining multiple weak learners, which individually have high bias but low variance.", 
+                        "By iteratively improving the ensemble's performance and focusing on the misclassified instances, BOOSTing methods effectively reduce the bias of the final model.",
+                        "It can also decrease variance as adjusting the instance weights allows the ensemble to adapt and generalize better to different regions of the input space."
+            ]
+        },
+        {
+            "name": "What is Generative? What is Discriminative? What is the difference between them?",
+            "answer": ["Generative models learn the joint probability distribution p(x,y) and then use Bayes' rule to compute the conditional probability distribution p(y|x).",
+                        "Discriminative models learn the conditional probability distribution p(y|x) directly.",
+                        "Discriminative models find the decision boundary between the classes, while generative models model the distribution of each class.",
+                        "Generative models can be used for both classification and generation.",
+                        "Discriminative models can only be used for classification.",
+                        "Generative models are more flexible, but they are harder to train.",
+                        "Discriminative models are less flexible, but they are easier to train."
+            ]
         }
     ]
 }
