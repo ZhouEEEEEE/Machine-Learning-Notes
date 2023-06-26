@@ -48,8 +48,8 @@
             ]
         },
         {
-            "name": "Why L1 and L2 Regularization are more robust to outliers than OLS?",
-            "answer": []
+            "name": "Why L1 is more robust than L2 on outliers?",
+            "answer": ["L1 regularization is more robust than L2 regularization for a fairly obvious reason. L2 regularization takes the square of the weights, so the cost of outliers present in the data increases exponentially. L1 regularization takes the absolute values of the weights, so the cost only increases linearly."]
         },
         {
             "name": "Why L1 and L2 can prevent overfitting?",
