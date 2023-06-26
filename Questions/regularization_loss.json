@@ -1,0 +1,62 @@
+{
+    "division": "Regularization and Loss",
+    "Questions": [
+        {
+           "name": "What is L1 Regularization?",
+           "answer": ["L1 Regularization, also known as Lasso regularization, adds the absolute values of the coefficients as the penalty term.", 
+           "The L1 penalty encourages sparsity by pushing some coefficients to exactly zero, effectively performing feature selection.", 
+           "It can be useful in situations where you suspect that only a subset of features is important for the model's performance."
+           ]
+        },
+        {
+            "name": "Why L1 Regularization pushes some coefficients to exactly zero?",
+            "answer": ["To minimize the loss function, we need to take the derivative of the loss function with respect to the coefficients, and then set the derivative to zero.",
+                         "For a random given lambda, it is possible that the coefficients are zero."]
+        },
+        {
+            "name": "What is L2 Regularization?",
+            "answer": ["L2 Regularization, also known as Ridge regularization, adds the squared magnitudes of the coefficients as the penalty term.", 
+                    "L2 regularization does not force the coefficients to become exactly zero.", 
+                    "Instead, it shrinks the coefficients towards zero, but they remain non-zero."
+            ]
+        },
+        {
+            "name": "Why L2 Regularization shrinks the coefficients towards zero, rather than pushing some coefficients to exactly zero?",
+            "answer": ["To minimize the loss function, we need to take the derivative of the loss function with respect to the coefficients, and then set the derivative to zero.",
+                         "We can see that, to make a coeffecient zero, lambda is close to infinity."]
+        },
+        {
+            "name": " What is the difference between L1 Regularization and L2 Regularization?",
+            "answer": ["L1 Regularization pushes some coefficients to exactly zero, while L2 Regularization shrinks the coefficients towards zero, but they remain non-zero.",
+                        "L1 Regularization can be used for feature selection, while L2 Regularization cannot be used for feature selection.",
+                        "L1 Regularization is more robust to outliers than L2 Regularization.",
+                        "L1 Regularization is more likely to lead to a sparse model than L2 Regularization.",
+                        "L1 Regularization is more computationally expensive than L2 Regularization. (L1 involves taking the absolute values of the weights, meaning that the solution is a non-differentiable piecewise function or, put simply, it has no closed form solution so we cannot solve it by matrix math.)"
+            ]
+        },
+        {
+            "name": "What is the prior of L1 Regularization?",
+            "answer": ["L1 Regularization assumes that the prior of the coefficients is Laplace distribution, which is characterized by a double-exponential probability density function."]
+        },
+        {
+            "name": "What is the prior of L2 Regularization?",
+            "answer": ["L2 Regularization assumes that the prior of the coefficients is Gaussian distribution, which is characterized by a bell-shaped probability density function."]
+        },
+        {
+            "name": "Why Lasso regression is useful for feature selection / is a sparce model?",
+            "answer": ["Because it can shrink some coefficients to exactly zero, effectively performing feature selection."
+            ]
+        },
+        {
+            "name": "Why L1 and L2 Regularization are more robust to outliers than OLS?",
+            "answer": []
+        },
+        {
+            "name": "Why L1 and L2 can prevent overfitting?",
+            "answer": ["The large a coeffecient, the larger the regularization term, more overfitting.",
+                        "Because there is a regularization term in the loss function, if we need to minimize the loss function, we need to minimize the regularization term.",          
+                        "If we minimize the coefficients, we will have a simpler model, which is less likely to overfitting."   
+        ]
+        }
+    ]
+}
