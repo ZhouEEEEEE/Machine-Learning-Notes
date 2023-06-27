@@ -1,0 +1,74 @@
+{
+    "Subtopic": "Metric",
+    "Questions": [
+        {
+            "name": "What is accuracy?",
+            "answer": ["Accuracy is the ratio of correct predictions to total predictions made."]
+         },
+        {
+            "name": "What is precision?",
+            "answer": ["Precision is the ratio of correct positive predictions to total positive predictions made.",
+                         "In formula form, precision is defined as: precision = tp / (tp + fp)"]
+         },
+        {
+            "name": "What is recall?",
+            "answer": ["Recall is the ratio of correct positive predictions to all positive samples",
+                         "In formula form, recall is defined as: recall = tp / (tp + fn)"]
+        },
+        {
+            "name": "What is f1 score?",
+            "answer": ["F1 score is the harmonic mean of precision and recall.",
+                        "In formula form, f1 score is defined as f1 = 2 * (precision * recall) / (precision + recall)"]
+        },
+        {
+            "name": "What is precision and recall tradeoff?",
+            "answer": ["Precision and recall are inversely proportional to each other.", 
+                        "If precision increases then recall decreases and vice versa.",
+                        "For any classification task, if we have a threshold then we can adjust it to increase precision or recall.",
+                        "If we increase the threshold, then precision will increase as the predictions are more confident and recall will decrease.",
+                        "If we decrease the threshold, then recall may increase as the prediction may capture more."]
+        },
+        {
+            "name": "Why F1 score is a good metric when the data is imbalanced?",
+            "answer": ["F1 score is a good metric when the data is unbalanced because it is the harmonic mean of precision and recall.",
+                        "If the data is unbalanced, then the model will be biased towards the majority class.",
+                        "In such cases, accuracy is not a good metric as it will be high even if the model predicts only the majority class.",
+                        "F1 score is a good metric as it considers both precision and recall which are independent of the class distribution."]
+        },
+        {
+            "name": "What is confusion matrix?",
+            "answer": ["Confusion matrix is a table that is used to evaluate the performance of a classification model.",
+                        "It is a 2x2 matrix that contains 4 values: true positive, true negative, false positive and false negative."]
+        },
+        {
+            "name": "What is ROC?",
+            "answer": ["ROC stands for Receiver Operating Characteristic.",
+                        "It is a plot of the true positive rate (recall) against the false positive rate.",
+                        "It shows the performance of a classification model at different classification threshold.",
+                        "The area under the ROC curve is called AUC.",
+                        "AUC is a good metric to evaluate the performance of a classification model.",
+                        "AUC is a value between 0 and 1.",
+                        "AUC = 0.5 means the model is random.",
+                        "AUC = 1 means the model is perfect."]
+        },
+        {
+            "name": "What is AUC?",
+            "answer": ["AUC stands for 'Area under the ROC curve'.",
+             "One way of interpreting AUC is that it is the probability that the model ranks a random positive example more highly than a random negative example."]
+        },
+        {
+            "name": "Why AUC is a good metric to evaluate the performance of a classification model?",
+            "answer": ["AUC is scale-invariant. It measures how well predictions are ranked, rather than their absolute values.", 
+            "AUC is classification-threshold-invariant. It measures the quality of the model's predictions irrespective of what classification threshold is chosen."]
+        },
+        {
+            "name": "What is R Squared?",
+            "answer": ["R Squared is a metric to evaluate the performance of a regression model.",
+                        "It is the proportion of the variance in the dependent variable that is predictable from the independent variable(s).",
+                        "It is also called as coefficient of determination.",
+                        "It's formula is: R Squared = var(mean) - var(model) / var(mean)",
+                        "It is a value between 0 and 1."]
+        }
+
+    ]
+}
