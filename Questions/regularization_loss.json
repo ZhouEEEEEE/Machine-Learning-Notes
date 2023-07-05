@@ -57,6 +57,39 @@
                         "Because there is a regularization term in the loss function, if we need to minimize the loss function, we need to minimize the regularization term.",          
                         "If we minimize the coefficients, we will have a simpler model, which is less likely to overfitting."   
         ]
+        },
+        {
+            "name": "What is Mean Squared Error (MSE)?",
+            "answer": ["Mean Squared Error (MSE) is the average of the squared errors. It is calculated as the average of the squared differences between the predicted and actual values.",
+                        "MSE is a risk metric corresponding to the expected value of the squared error loss or quadratic loss."
+        ]
+        },
+        {
+            "name": "Why we don't use MSE in logistic regression?",
+            "answer": ["Because the loss function of logistic regression is not convex, which means that there are many local minimums, and we cannot guarantee that we can find the global minimum.",
+                        "MSE is a convex function, which means that there is only one minimum, and we can guarantee that we can find the global minimum."
+                    ]
+        },
+        {
+            "name": "Why we don't use MSE in classification?",
+            "answer": ["Another reason is in classification problems, we have target values like 0/1, So (Ŷ-Y)2 will always be in between 0-1 which can make it very difficult to keep track of the errors and it is difficult to store high precision floating numbers."]
+        },
+        {
+            "name": "What is log loss? (cross entropy loss)",
+            "answer": ["log loss is the negative average of the log of the corrected probabilities."]
+        },
+        {
+            "name": "When we use log loss?",
+            "answer": ["Log loss is used when we have a classification problem with two classes.",
+                        "Log loss is a convex function, which means that there is only one minimum, and we can guarantee that we can find the global minimum."
+                    ]
+        },
+        {
+            "name": "Why we cannot use log loss in multi-class classification?",
+            "answer": ["Log loss is label-dependent.",
+            "We can use cross entropy loss instead of log loss in multi-class classification."
+        ]
         }
+
     ]
 }
