@@ -2,6 +2,24 @@
     "Subtopic": "Basic Concept",
     "Questions": [
         {
+            "name": "What is supervised learning?",
+            "answer": ["Supervised learning is a type of machine learning where the model learns from labeled training data.",
+                        "The model learns the relationship between the input features and the target variable, and it is then able to make predictions on new data where the target variable is unknown.",
+                        "Supervised learning includes regression and classification, like linear regression, logistic regression, and support vector machines (SVM)."]
+        },
+        {
+            "name": "What is unsupervised learning?",
+            "answer": ["Unsupervised learning is a type of machine learning where the model learns from unlabeled training data.",
+                        "The model learns the relationship between the input features, and it is then able to make predictions on new data where the target variable is unknown.",
+                        "Unsupervised learning includes clustering and dimensionality reduction, like K-means clustering and Principal Component Analysis (PCA)."]
+
+        },
+        {
+            "name": "What is semi-supervised learning?",
+            "answer": ["Semi-supervised learning is a type of machine learning where the model learns from both labeled and unlabeled training data.",
+                        "Semi-supervised learning includes self-training, co-training, and generative models."]
+        },
+        {
             "name": "What is overfitting?",
             "answer": ["Overfitting is when the model is too complex for the data, and it starts to learn the noise in the data rather than the signal.", 
                         "This is a problem because the model will perform well on the training data, but will perform poorly on the test data."]

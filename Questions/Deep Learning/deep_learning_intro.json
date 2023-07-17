@@ -1,0 +1,37 @@
+{
+    "Subtopic": "Basic Concepts",
+    "Questions": [
+        {
+            "name": "What is deep neural network?",
+            "answer": ["Deep neural networks are neural networks with multiple hidden layers between the input and output layers."]
+        },
+        {
+            "name": "What are the bias terms in neural networks?",
+            "answer": ["In simple words, neural network bias can be defined as the constant which is added to the product of features and weights.", 
+                        "It is used to offset the result.", 
+                        "It helps the models to shift the activation function towards the positive or negative side.",
+                        "It is unique for all layers in the network.",
+                        "In formula, it is represented as: y = wx + b, where b is the bias term."]
+        },
+        {
+            "name": "Why we need bias terms in neural networks?",
+            "answer": ["For example, in linear regression, the bias term is used to shift the regression line from the origin.", 
+                        "If we include the bias term 'b' in the activation function, it would allow the neural network to shift the activation function to the left and to the right by simply modifying the values of b.", 
+                        "It is used to make the model more flexible to fit the data better."]
+        },
+        {
+            "name": "What is back propagation in neural networks?",
+            "answer": ["For supervised learning, backpropagation is a method used to calculate the gradient of the loss function of a neural network with respect to its weights.", 
+                        "Using the chain rule to iteratively compute gradients for each layer and find the global minimum of the loss function.", 
+                        "It is commonly used by the gradient descent optimization algorithm to update the weight of neurons by calculating the gradient of the loss function.",
+                        "In unsupervised learning, backpropagation is used by the autoencoder algorithm."]
+        },
+        {
+            "name": "What is feedforward propagation?",
+            "answer": ["Feedforward propagation is the process of moving forward in the neural network.", 
+                        "It is the process of moving from the input layer to the output layer.", 
+                        "It is also known as forward propagation."]
+        }
+
+    ]
+}
