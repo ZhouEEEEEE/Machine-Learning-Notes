@@ -1,5 +1,5 @@
 {
-    "Subtopic": "Regularization and Loss",
+    "Subtopic": "Regularization",
     "Questions": [
         {
            "name": "What is L1 Regularization?",
@@ -73,40 +73,6 @@
         {
             "name": "Why we don't use MSE in classification?",
             "answer": ["Another reason is in classification problems, we have target values like 0/1, So (Ŷ-Y)2 will always be in between 0-1 which can make it very difficult to keep track of the errors and it is difficult to store high precision floating numbers."]
-        },
-        {
-            "name": "What is log loss? (cross entropy loss)",
-            "answer": ["log loss is the negative average of the log of the corrected probabilities."]
-        },
-        {
-            "name": "When we use log loss?",
-            "answer": ["Log loss is used when we have a classification problem with two classes.",
-                        "Log loss is a convex function, which means that there is only one minimum, and we can guarantee that we can find the global minimum."
-                    ]
-        },
-        {
-            "name": "Why we cannot use log loss in multi-class classification?",
-            "answer": ["Log loss is label-dependent.",
-            "We can use cross entropy loss instead of log loss in multi-class classification."
-        ]
-        },
-        {
-            "name": "What is SVM(Support Vector Machine)?",
-            "answer": ["SVM is a supervised machine learning algorithm that can be used for both classification and regression problems.",
-                        "The objective of the SVM algorithm is to find a hyperplane in an N-dimensional space (N — the number of features) that distinctly classifies the data points.",
-                        "To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes.",
-                        "Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence."
-                    ]
-        },
-        {
-            "name": "What is hinge loss(The loss of SVM)?",
-            "answer": [
-                "The mathematical formula of hinge loss is max(0, 1-y*f(x)), where y is the true label, f(x) is the predicted value.",
-                "For data on the wrong side of the margin, the loss is proportional to the distance from the margin.",
-                "The true value of y is either 1 or -1, so the loss is either 0 or proportional to the distance from the margin.",
-                "For data on the correct side of the margin, the loss is 0.",
-                "The goal of optimizing SVM is to minimize the average hinge loss across all training examples plus the regularization term."
-            ]
         }
 
     ]
