@@ -1,0 +1,58 @@
+{
+    "Subtopic": "Loss",
+    "Questions": [
+        {
+            "name": "What is log loss? (cross entropy loss)",
+            "answer": ["log loss is the negative average of the log of the corrected probabilities."]
+        },
+        {
+            "name": "When we use log loss?",
+            "answer": ["Log loss is used when we have a classification problem with two classes.",
+                        "Log loss is a convex function, which means that there is only one minimum, and we can guarantee that we can find the global minimum."
+                    ]
+        },
+        {
+            "name": "Why we cannot use log loss in multi-class classification?",
+            "answer": ["Log loss is label-dependent.",
+            "We can use cross entropy loss instead of log loss in multi-class classification."
+        ]
+        },
+        {
+            "name": "What is SVM(Support Vector Machine)?",
+            "answer": ["SVM is a supervised machine learning algorithm that can be used for both classification and regression problems.",
+                        "The objective of the SVM algorithm is to find a hyperplane in an N-dimensional space (N — the number of features) that distinctly classifies the data points.",
+                        "To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes.",
+                        "Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence."
+                    ]
+        },
+        {
+            "name": "What is hinge loss(The loss of SVM)?",
+            "answer": [
+                "The mathematical formula of hinge loss is max(0, 1-y*f(x)), where y is the true label, f(x) is the predicted value.",
+                "For data on the wrong side of the margin, the loss is proportional to the distance from the margin.",
+                "The true value of y is either 1 or -1, so the loss is either 0 or proportional to the distance from the margin.",
+                "For data on the correct side of the margin, the loss is 0.",
+                "The goal of optimizing SVM is to minimize the average hinge loss across all training examples plus the regularization term."
+            ]
+        },
+        {
+            "name": "What is the process of MLE?",
+            "answer":["We want to find the parameters that maximize the likelihood of the data.",
+            "Firstly, we need to define the conditional probability of the data given the parameters.",
+            "Secondly, we need to define the likelihood function, where the likelihood function is the product of the conditional probability of the data given the parameters.",
+            "Thirdly, we need to find the parameters that maximize the likelihood function by taking the derivative of the likelihood function with respect to the parameters and set it to zero.",
+            "Finally, we can find the parameters that maximize the likelihood function."
+            ]
+        },
+        {
+            "name": "What is OLS(ordinary least square)?",
+            "answer":["The ordinary least square minimizes the square of the residuals.",
+            "The residuals are the difference between the actual value and the predicted value."]
+        },
+        {
+            "name": "MLE on Linear Regression",
+            "answer":["https://www.statlect.com/fundamentals-of-statistics/linear-regression-maximum-likelihood",
+            "The usual OLS of linear regression is equivalent to the MLE of linear regression."]
+        }
+    ]
+}

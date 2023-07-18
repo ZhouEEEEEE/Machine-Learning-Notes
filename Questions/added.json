@@ -1,0 +1,96 @@
+{
+    "Subtopic": "Neural Networks - Basic Concepts",
+    "Questions": [
+        {
+            "name": "What is gradient vanishing and gradient exploding problem?",
+            "answer": [
+                "When we back propagate to update the weights, we update the weights by subtract old weights with learning rate and gradient.",
+                "In formula, new_weight = old_weight - learning_rate * gradient, where the gradient is the partial derivative of the loss function with respect to the weight.",
+                "If the gradient is initialized too small, as number of hidden layers grows, gradient becomes very small and weights will hardly change.",
+                "This will hamper the learning process, which is a gradient vanishing problem.",
+                "If the gradient is initialized too large, individual derivatives are large, by chain rule, the final gradient(derivative) becomes very large and weights will change dramatically.",
+                "This will also hamper the learning process, which is a gradient exploding problem."
+            ]
+        },
+        {
+            "name": "Can we initialize all weights to 0?",
+            "answer": [
+                "No, if we initialize all weights to 0, all neurons will have the same output and same gradient, which means all neurons will be updated in the same way.",
+                "This will make the neural network useless."
+            ]
+        },
+        {
+            "name": "How to initialize weights?",
+            "answer": [
+                "We can initialize weights randomly.",
+                "For example, we can initialize weights from a normal distribution with mean 0 and standard deviation 1 (Xavier initialization).",
+                "We can also initialize weights from a uniform distribution between -1 and 1.",
+                "The reason is the mean of the activation function is 0 and the variance stays the same across different layers."
+            ]
+        },
+        {
+            "name": "How to prevent gradient vanishing and gradient exploding?",
+            "answer": [
+                "Using different activation functions for vanishing gradient problem",
+                "Using different weight initialization methods",
+                "Using gradient clipping with a threshold for gradient exploding problem",
+                "Using differnet optimization and learning rate"
+            ]           
+        },
+        {
+            "name": "What is learning rate? How it affects the training process?",
+            "answer": [
+                "Learning rate is a hyperparameter that controls how much we are adjusting the weights of our network with respect the loss gradient.",
+                "The lower the value, the slower we travel along the downward slope.",
+                "While this might be a good idea (using a low learning rate) in terms of making sure that we do not miss any local minima, it could also mean that we’ll be taking a long time to converge — especially if we get stuck on a plateau region.",
+                "If we use a high value for the learning rate, we might overshoot the minima, which means that we may never reach the minima and end up with a very high loss instead."
+            ]
+        },
+        {
+            "name": "How we perform hyperparameter tuning with random search or grid search?",
+            "answer": ["Hyperparameter tuning is a process to find the best hyperparameters for a model.",
+                    "We can use random search or grid search to find the best hyperparameters.",
+                    "Random Search is defining a search space as a bounded domain of hyperparameter values and randomly sample points in that domain.",
+                    "Grid Search is defining a search space as a grid of hyperparameter values and evaluate every position in the grid."]
+        },
+        {
+            "name": "How to prevent overfitting in neural networks?",
+            "answer": [
+                "Use more training data",
+                "Use regularization",
+                "Use dropout",
+                "Use data augmentation",
+                "Use early stopping",
+                "Use batch normalization",
+                "Use transfer learning"
+            ]
+        },
+        {
+            "name": "What is dropout reugularization?",
+            "answer": [
+                "Dropout is a regularization technique for neural network.",
+                "It is a technique where randomly selected neurons are ignored during training.",
+                "This means that their contribution to the activation of downstream neurons is temporally removed on the forward pass and any weight updates are not applied to the neuron on the backward pass.",
+                "Dropout has the effect of making the training process noisy, forcing nodes within a layer to probabilistically take on more or less responsibility for the inputs."
+            ]
+        },
+        {
+            "name": "What is Dropout? How we use it in training and testing?",
+            "answer": [
+                "AlexNet used dropout method.",
+                "Given a keep probability, we can initialize a mask matrix with 0 and 1 by dropout=(np.random.rand(*H1.shape) < p)",
+                "Then we can multiply the mask matrix with the hidden layer to get the output.",
+                "By p*a+(1-p)*0=pa, where a is the activation of the hidden layer, we can see that the expected value of the output is pa, which is scaled by p.",
+                "Since we do not use dropout in testing stage, all the neurons are kept, we need to multiply the testing output with keep probability to align with training output."
+            ]
+        },
+        {
+            "name": "What is Inverted Dropout?",
+            "answer": [
+                "Inverted dropout is a technique that allows us to use dropout without having to change the expected value of our activations.",
+                "Inverted dropout scales the activations by 1/p during training time.",
+                "This way, the expected value of the activations remains the same as it was without dropout."
+            ]
+        }
+    ]
+}
