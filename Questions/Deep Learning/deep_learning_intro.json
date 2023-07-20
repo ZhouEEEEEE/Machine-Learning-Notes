@@ -122,7 +122,76 @@
                 "Inverted dropout scales the activations by 1/p during training time.",
                 "This way, the expected value of the activations remains the same as it was without dropout."
             ]
+        },
+        {
+            "name": "What is Batch Normalization?",
+            "answer": [
+                "Batch normalization is a technique for training very deep neural networks that standardizes the inputs to a layer for each mini-batch.",
+                "This has the effect of stabilizing the learning process and dramatically reducing the number of training epochs required to train deep networks.",
+                "As the input of the next layer is more stable, the learning process is easier and potentially resolve the gradient vanishing and exploding problem",
+                "In formula, if the output of activation function is a, the input of the next layer is b, the mean of a is mu, the variance of a is sigma, the output of batch normalization is bn_output = gamma * (a - mu) / sqrt(sigma^2 + epsilon) + beta, where gamma and beta are learnable parameters, epsilon is a small number to avoid dividing by zero."
+            ]
+        },
+        {
+            "name": "Why batch norm works?",
+            "answer": [
+                "Batch normalization works because it normalizes the input to each unit to have zero mean and unit variance.",
+                "This helps to stabilize the learning process and potentially resolve the gradient vanishing and exploding problem.",
+                "It also helps to reduce the internal covariate shift(the phenomenon where the distribution of inputs to a deep neural network changes as the network's weights are updated during training), which is the change in the distribution of network activations due to the change in network parameters during training.",
+                "Since by the mini-batch normalization, the mean and variance is hust computed by that mini-batch, which add noise to training process, acting as a little regularization."
+            ]
+        },
+        {
+            "name": "What is Batch Gradient Descent?",
+            "answer": [
+                "Batch gradient descent computes the gradient of the cost function w.r.t. to the parameters θ for the entire training dataset.",
+                "Since we need to calculate the gradient for the whole training set to perform just one update, batch gradient descent can be very slow and requires large memory.",
+                "Batch is great for convex or relatively smooth error manifolds, as we dive straight towards an optimum solution."
+            ]
+        },
+        {
+            "name": "What is Stochastic Gradient Descent?",
+            "answer": [
+                "Stochastic Gradient Descent (SGD) in contrast performs a parameter update for each training example x(i) and label y(i)."
+            ]
+        },
+        {
+            "name": "What is mini-batch gradient descent?",
+            "answer": [
+                "Mini-batch gradient descent takes a small random batch of examples from the training set and computes the gradient of the cost function w.r.t. to the parameters θ for that small random batch only."
+            ]
+        },
+        {
+            "name": "Compare Batch Gradient Descent and Stochastic Gradient Descent?",
+            "answer": [
+                "Convergence Speed: Batch gradient descent takes longer to converge since it computes the gradient using the entire training dataset in each iteration. Stochastic gradient descent, on the other hand, can converge faster since it updates the model parameters after processing each example, which can lead to faster convergence.",
+                "Convergence Accuracy: Batch gradient descent is more accurate since it computes the gradient using the entire training dataset. Stochastic gradient descent, on the other hand, can be less accurate since it computes the gradient using a subset of examples, which can introduce more noise and variance in the gradient estimate.",
+                "Computation and Memory Requirements: Batch gradient descent requires more computation and memory since it needs to process the entire training dataset in each iteration. Stochastic gradient descent, on the other hand, requires less computation and memory since it only needs to process a single example or a small subset of examples in each iteration.",
+                "Optimization of Non-Convex Functions: Stochastic gradient descent is more suitable for optimizing non-convex functions since it can escape local minima and find the global minimum. Batch gradient descent, on the other hand, can get stuck in local minima.",
+                "In summary, batch gradient descent is more accurate but slower, while stochastic gradient descent is faster but less accurate."
+            ]
+        },
+        {
+            "name": "Problem of Plateau?",
+            "answer": [
+                "Plateau is a region where the gradient is close to zero for a long time.",
+                "In this region, the gradient descent algorithm will take a long time to converge.",
+                "Can be solved by great optimization algorithm, such as Adam."
+            ]
+        },
+        {
+            "name": "Problem of Saddle Point?",
+            "answer": [
+                "Saddle point is a point where the gradient is zero but it is not a local minimum.",
+                "In this region, the gradient descent algorithm will take a long time to converge."
+            ]
+        },
+        {
+            "name": "Difference between saddle point and local minimum?",
+            "answer": [
+                "Local minimum is a minumum value of all directions, while saddle point is a local minimum in one direction and a local maximum in another direction."]
         }
+
 
     ]
 }
