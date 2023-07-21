@@ -1,0 +1,69 @@
+{
+    "Subtopic": "Activation Functions",
+    "Questions": [
+        {
+            "name": "What is activation function?",
+            "answer": [
+                "Activation functions are used to introduce non-linearity to neural networks.",
+                "An activation function determines if a neuron should be activated or not activated."
+            ]
+        },
+        {
+            "name": "Why we need non-linear activation functions?",
+            "answer": [
+                "A non-linear activation function allows the stacking of multiple layers of neurons to create a deep neural network, which is required to learn complex data sets with high accuracy.",
+                "Without a non-linear activation function in the network, a NN, no matter how many layers it had, would behave just like a single-layer perceptron, because summing these layers would give you just another linear function"
+            ]
+        },
+        {
+            "name": "What is lnear activation function? Pros and cons?",
+            "answer": [
+                "The linear activation function, often called the identity activation function, is proportional to the input.",
+                "The range of the linear activation function will be from negative infinity to positive infinity.",
+                "The linear activation function simply adds up the weighted total of the inputs and returns the result.",
+                "Mathematically, the linear activation function can be represented as f(x) = x.",
+                "The gradient of the linear activation function is constant and therefore, the backpropagation will be constant too.",
+                "The main disadvantage of linear activation functions is that they are not able to learn complex patterns in the data."
+            ]
+        },
+        {
+            "name": "What is binary step activation function? Pros and cons?",
+            "answer": [
+                "The binary step activation function is a threshold-based activation function.",
+                "The binary step activation function is a binary function that returns either 0 or 1.",
+                "Mathematically, the binary step activation function can be represented as f(x) = 1 if x >= 0, else 0.",
+                "It cannot provide multi-value outputs, for example, it cannot be used for multi-class classification problems.",
+                "The step function's gradient is zero, which makes the back propagation procedure difficult."
+            ]
+        },
+        {
+            "name": "What is sigmoid activation function? Pros and cons?",
+            "answer": [
+                "The sigmoid activation function is a non-linear activation function.",
+                "It takes a number and maps it to a value between 0 and 1.",
+                "The sigmoid activation function is also called the logistic function.",
+                "The sigmoid activation function is defined as f(x) = 1 / (1 + e^-x).",
+                "The sigmoid activation function is used in the output layer of the binary classification problems.",
+                "Sigmoid function gives rise to a problem of “Vanishing gradients” and Sigmoids saturate and kill gradients.",
+                "Its output isn't zero centred, and it makes the gradient updates go too far in different directions. The output value is between zero and one, so it makes optimization harder."
+            ]
+        },
+        {
+            "name": "Why training with sigmoid activation function is slow?",
+            "answer": [
+                "As the absolute value of the input increases, the derivative of the sigmoid function approaches zero.",
+                "This will lead to the problem of vanishing gradients, which will slow down the training process."
+            ]
+        },
+        {
+            "name": "What is TanH (Hyperbolic Tangent) activation function? Pros and cons?",
+            "answer": [
+                "TanH compress a real-valued number to the range [-1, 1].", 
+                "It's non-linear, But it's different from Sigmoid,and its output is zero-centered.",
+                "The TanH activation function is defined as f(x) = (e^x - e^-x) / (e^x + e^-x).",
+                "The advantages of TanH activation function are that it is zero-centered and that it has a steeper gradient than the sigmoid activation function.",
+                "The disadvantages of TanH activation function are that it suffers from the vanishing gradient problem."
+            ]
+        }
+    ]
+}
