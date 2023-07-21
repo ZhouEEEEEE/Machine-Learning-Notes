@@ -64,6 +64,59 @@
                 "The advantages of TanH activation function are that it is zero-centered and that it has a steeper gradient than the sigmoid activation function.",
                 "The disadvantages of TanH activation function are that it suffers from the vanishing gradient problem."
             ]
+        },
+        {
+            "name": "What is Relu activation function? Pros and cons?",
+            "answer": [
+                "The ReLU activation function is a non-linear activation function.",
+                "It is a piecewise linear function that will output the input directly if it is positive, otherwise, it will output zero.",
+                "The ReLU activation function is defined as f(x) = max(0, x).",
+                "Since the gradient is either 1 or 0, the ReLU activation function does not have the vanishing gradient problem and neurons never saturate.",
+                "Since only a certain number of neurons are activated, the ReLU function is far more computationally efficient when compared to the sigmoid and TanH functions.",
+                "ReLU accelerates the convergence of gradient descent towards the global minimum of the loss function due to its linear, non-saturating property.",
+                "However, ReLU can only be used in the hidden layers of a neural network model",
+                "The ReLU activation function suffers from the dying ReLU problem.",
+                "A ReLU neuron is said to be dead when it is not able to activate itself during the training process because its weighted sum is negative for all the inputs and gradient becomes 0."
+            ]
+        },
+        {
+            "name": "Why ReLU can only be used in hidden layer?",
+            "answer":[
+                "The ReLU activation function is not able to handle negative outputs.",
+                "The ReLU activation function will output zero if the input is negative.",
+                "This will lead to the problem of dead neurons, which will slow down the training process."
+            ]
+        },
+        {
+            "name": "What is Leaky ReLU activation function? Pros and cons?",
+            "answer": [
+                "The Leaky ReLU activation function is a variant of the ReLU activation function.",
+                "It is defined as f(x) = alpha * x if x < 0, else x, alpha is a small constant, usually 0.01.",
+                "Since we mutiply negative values by a small constant, the Leaky ReLU activation function avoids the problem of dead neurons and enable back propagation.",
+                "It also has the advantages from the ReLU activation function, such as the non-saturating property and the computational efficiency.",
+                "The predictions may not be steady for negative input values."
+            ]
+        },
+        {
+            "name": "What is ELU activation function? Pros and cons?",
+            "answer": [
+                "The ELU activation function is a variant of the ReLU activation function.",
+                "It is defined as f(x) = alpha * (e^x - 1) if x < 0, else x, alpha is a small constant.",
+                "The ELU activation function has the advantages from the ReLU activation function, such as the non-saturating property and the computational efficiency.",
+                "It also has the advantages from the Leaky ReLU activation function, such as the avoiding the problem of dead neurons and enable back propagation.",
+                "Exponential operations are there in ELU, So it increases the computational time but still lower than ReLU."
+            ]
+        },
+        {
+            "name": "What is Softmax activation function? Pros and cons?",
+            "answer":[
+                "A combination of many sigmoids is referred to as the Softmax function.",
+                "It is usually used in multi-class classification problems.",
+                "The Softmax activation function is defined as f(x) = e^x / sum(e^x).",
+                "The softmax function gives the probability(0 to 1) of the current class with respect to others. This means that it also considers the possibility of other classes too.",
+                "The advantages of Softmax activation function are that it is able to handle multiple classes and that it is able to normalize the output probabilities.",
+                "The disadvantages of Softmax activation function are that it suffers from the vanishing gradient problem and that it is not able to handle large number of classes."
+            ]
         }
     ]
 }
