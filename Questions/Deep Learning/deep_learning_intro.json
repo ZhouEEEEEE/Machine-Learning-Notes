@@ -6,6 +6,24 @@
             "answer": ["Deep neural networks are neural networks with multiple hidden layers between the input and output layers."]
         },
         {
+            "name": " What is Epoch?",
+            "answer": [
+                "The number of times the algorithm runs on the whole training dataset."
+            ]
+        },
+        {
+            "name" : "What is cost function/loss function?",
+            "answer":[
+                "A cost function is used to calculate the cost, which is the difference between the predicted value and the actual value."
+            ]
+        },
+        {
+            "name": "What is Weights/ Bias?",
+            "answer": [
+                "The learnable parameters in a model that controls the signal between two neurons."
+            ]                
+        },
+        {
             "name": "What are the bias terms in neural networks?",
             "answer": ["In simple words, neural network bias can be defined as the constant which is added to the product of features and weights.", 
                         "It is used to offset the result.", 

@@ -5,7 +5,8 @@
             "name": "What is activation function?",
             "answer": [
                 "Activation functions are used to introduce non-linearity to neural networks.",
-                "An activation function determines if a neuron should be activated or not activated."
+                "An activation function determines if a neuron should be activated or not activated.",
+                "https://www.kdnuggets.com/2022/06/activation-functions-work-deep-learning.html"
             ]
         },
         {

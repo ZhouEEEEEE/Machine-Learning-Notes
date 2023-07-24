@@ -1,0 +1,50 @@
+{
+    "Subtopic": "Optimizer",
+    "Questions": [
+        {
+            "name": "What is the optimizer?",
+            "answer": [
+                "An optimizer in deep learning is an algorithm that adjusts the weights of the connections in a neural network in order to minimize the difference between the predicted output and the actual output for a given input."
+            ]
+        },
+        {
+            "name": "What is SGD?",
+            "answer": [
+                "In stochastic gradient descent, instead of taking the whole dataset for each iteration, we randomly select one data point.",
+                "Since the path is full of noise, the SGD uses a higher number of iterations to reach the minimum point.",
+                "The overall computation time increases but the computation cost for each iteration is reduced."
+            ]
+        },
+        {
+            "name": "What is SGD with momentum?",
+            "answer": [
+                "Since the path of SGD is noisy, the gradient descent oscillates across the slopes and takes a long time to reach the minimum point.",
+                "Hence, we sum up the gradients of the previous steps and use them to update the weights.",
+                "If current steps are in the same direction as the previous steps, the gradients will be larger and the updates will be faster.",
+                "If current steps are in the opposite direction as the previous steps, the gradients will be smaller and the updates will be slower.",
+                "Momentum is most useful in optimization problems where the objective function has a large amount of curvature (e.g. changes a lot), meaning that the gradient may change a lot over relatively small regions of the search space."
+            ]
+        },
+        {
+            "name": "What is mini-batch gradient descent?",
+            "answer": [
+                "In mini-batch gradient descent, instead of taking the whole dataset for each iteration, we randomly select the batches of data.",
+                "The batch size is usually between 10 and 1000.",
+                "The overall computation time increases but the computation cost for each iteration is reduced.",
+                "It requires hyperparameters are in 'mini-batch size'."
+            ]
+        },
+        {
+            "name": "What is Adagrad?",
+            "answer": [
+                "In Adagrad, the learning rate is automatically adjusted in each iteration according to the previous gradients.",
+                "In mathematical formula, the learning rate is divided by the square root of the sum of the squares of the previous gradients.",
+                "It adapts the learning rate to the parameters, performing larger updates for infrequent and smaller updates for frequent parameters.",
+                "For this reason, it is well-suited for dealing with sparse data.",
+                "However, its main weakness is its accumulation of the squared gradients in the denominator: Since every added term is positive, the accumulated sum keeps growing during training.",
+                "The learning rate will eventually become infinitesimally small, at which point the algorithm is no longer able to acquire additional knowledge."
+            ]
+        }
+
+    ]
+}
