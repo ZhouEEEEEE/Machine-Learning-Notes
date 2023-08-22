@@ -1,0 +1,81 @@
+{
+    "Subtopic": "Decision Tree Algorithm",
+    "Questions": [
+        {
+            "name": "What is Decision Tree Algorithm?",
+            "answer": [
+                "Decision Tree Algorithm is a Supervised Machine Learning Algorithm which is used for both Classification and Regression problems.",
+                "It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.",
+                "In a decision tree, there are two nodes, which are the Decision Node and Leaf Node.",
+                "The decision node is used to make any decision and has multiple branches, whereas the leaf node is the output of those decisions and does not contain any further branches."
+            ]
+        },
+        {
+            "name": "How does Decision Tree Algorithm work?",
+            "answer": [
+                "1. Start with a feature in the data set and make a split based on that feature using Gini index or gain ratio.",
+                "2. Make that feature a decision node and split the data set into smaller subsets.",                
+                "3. Continue splitting based on the features by repeating this process recursively for each leaf node until one of the condition match:",
+                "(a) Leaf nodes are pure such that only one class remains. (b) A maximum depth is reached such that there are no more leaf nodes. (c) A performance metric is reached."
+            ]
+        },
+        {
+            "name": "Entropy in splitting?",
+            "answer": [
+                "This measures the level of suprise or uncertainty in the data set.",
+                "The suprise is the log to the inverse of the probability of the event.",
+                "Entropy is the expected value of suprise",
+                "Mathematically, Entropy = sum(-p*log(p)), where p is the probability of the event.",
+                "The higher the entropy, the more impure the data set is.",
+                "The range of entropy is from 0 to 1."
+                ]
+        },
+        {
+            "name": "Information Gain in splitting?",
+            "answer": [
+                "Information gain is the measure of decrease in entropy after the data set is split.",
+                "It measures how much information a feature gives us about the class.",
+                "Mathematically, Information Gain(dataset, feature) = Entropy(dataset) - sum over each value of the fature (proportion * entropy(value))",
+                "The higher the information gain, the more important the feature is.",
+                "The range of information gain is from 0 to 1.",
+                "We can set a stricter stopping criterion (such as a minimum gain function value) to avoid unnecessary splits for regularization."
+            ]
+        },
+        {
+            "name": "Gini Index in splitting?",
+            "answer": [
+                "Gini impurity is the probability of incorrectly classifying a random data point in a dataset, the lower the better",
+                "It is calculated by subtracting the sum of the squared probabilities of each class from one.",
+                "Mathematically, Gini Index for the value of a feature = 1 - sum(p^2), where p is the probability of the event.",
+                "The total Gini Index of a feature is the weighted sum of the Gini Index for each value of the feature.",
+                "The higher the gini index, the more impure the data set is.",
+                "The range of gini index is from 0 to 1."
+            ]
+        },
+        {
+            "name": "How to prevent overfitting in Decision Tree Algorithm?",
+            "answer": [
+                "Pruning is the technique used to prevent overfitting in Decision Tree Algorithm.",
+                "Useing ensemble methods like Random Forest is also a good way to prevent overfitting in Decision Tree Algorithm."
+            ]
+        },
+        {
+            "name": "What is Pre-Pruning?",
+            "answer": [
+                "Pre-Pruning is the process of stopping the tree construction early, which can be done by Hyperparameter tuning.",
+                "The hyperparameters: the depth of the tree, the number of leaf nodes or the number of training examples that a node can split.",
+                "Pre-Pruning is faster than Post-Pruning."
+            ]
+        },
+        {
+            "name": "What is Post-Pruning?",
+            "answer": [
+                "Post-Pruning is the process of removing the branches of the tree that do not provide any useful information.",
+                "It is also known as backward pruning or reduced error pruning.",
+                "Post-Pruning is slower than Pre-Pruning.",
+                "Cost complexity pruning is the most common method of Post-Pruning, the higer the alpha value, the more branches are pruned.",
+                "We keep pruning the tree until the error rate starts increasing."
+            ]
+        }
+    ]
+}
