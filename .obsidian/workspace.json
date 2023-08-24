@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "a49ebc3b09964c5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "af688af9699f570f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ddb47d300801958",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge/Machine Learning Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b337ef794c77808c",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf9bd569feaf5881",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f583f9c9b1dda370",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9062bbafda7df44e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eb04ef00112b6dc5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "748b2f04ef37f3f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0034a2cc0e653911",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c272de76c7a169b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Knowledge/Machine Learning Overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e18657bffe0e3386",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Knowledge/Machine Learning Overview.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e5d3848a73edabf8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6d7637d8feb56047",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Knowledge/Machine Learning Overview.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6ddb47d300801958",
+  "lastOpenFiles": [
+    "Knowledge/Classification Models/Classification Models.md",
+    "Knowledge/Classification Models/Gradient Boosting.md",
+    "Knowledge/Classification Models/K-Nearest Neighbors(KNN).md",
+    "Knowledge/Classification Models/Naive Bayes.md",
+    "Knowledge/Classification Models/Support Vector Machines(SVM).md",
+    "Knowledge/Classification Models/Random Forest.md",
+    "Knowledge/Classification Models/Decision Trees.md",
+    "Knowledge/Regression Models/Linear Regression.md",
+    "Knowledge/Regression Models/Logistic Regression.md",
+    "Knowledge/Regression Models/Regression Models.md",
+    "Knowledge/Optimization/gradient descent.md",
+    "Knowledge/Regression Models/Ridge & Lasso Regression.md",
+    "Knowledge/Machine Learning Overview.md",
+    "Knowledge/Regression Models/Polynomial Regression.md",
+    "Knowledge/Regression Models/Multiple Regression.md",
+    "Knowledge/Optimization",
+    "Shiyuan/Shiyuan Zhou Resume ML.pdf",
+    "Knowledge/Classification Models",
+    "Knowledge/Regression Models",
+    "Untitled",
+    "Untitled.canvas",
+    "README.md",
+    "Knowledge",
+    "Untitled.md"
+  ]
+}

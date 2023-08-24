@@ -1,4 +1,4 @@
-﻿# Machine-Learning-Notes
+# Machine-Learning-Notes
 
 ## Introduction
 This notebook contains machine learning questions collected and answered by Shiyuan (Eric) Zhou, commonly referred to as '八股文' in Mandarin. JSON-formatted answers are provided for all the questions. However, please note that this notebook is still a work in progress and will be continuously updated.
