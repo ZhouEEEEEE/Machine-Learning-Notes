@@ -1,6 +1,47 @@
 {
     "Subtopic": "Random Forest",
     "Questions": [
-
+        {
+            "name": "What is Random Forest?",
+            "answer": [
+                "Random Forest is a supervised learning algorithm. It can be used both for classification and regression.",
+                "It utilized bagging technique for building multiple models with different subsets of the training dataset.",
+                "It takes the average to improve the predictive accuracy of that dataset.",
+                "It takes the prediction from each tree and based on the majority votes of predictions, and it predicts the final output."
+            ]
+        },
+        {
+            "name": "What are the hyperparameters of Random Forest?",
+            "answer": [
+                "The hyperparameters of Random Forest are:",
+                "n_estimators: The number of trees in the forest.",
+                "criterion: The function to measure the quality of a split.",
+                "max_features: The number of features to consider when looking for the best split. If total features are n_features then: sqrt(n_features) or log2(n_features) can be selected as max features for node splitting.",
+                "max_depth: The maximum depth of the tree.",
+                "min_samples_split: The minimum number of samples required to split an internal node. The higher the number, the early the tree will stop splitting.",
+                "min_samples_leaf: The minimum number of samples required to be at a leaf node. The higher the number, the early the tree will stop splitting.",
+                "max_leaf_node: The maximum number of leaf nodes."
+            ]
+        },
+        {
+            "name": "Will random forest reduce variance or bias?",
+            "answer": [
+                "Random forest will reduce variance and not bias."
+            ]
+        },
+        {
+            "name": "Why random forest does not reduce bias? Even have higher bias than a signle tree?",
+            "answer": [
+                "Both Bagging and Random Forests use Bootstrap sampling, and as described in 'Elements of Statistical Learning', this increases bias in the single tree.", 
+                "Furthermore, as the Random Forest method limits the allowed variables to split on in each node, the bias for a single random forest tree is increased even more."
+            ]
+        },
+        {
+            "name": "Why random forest reduce variance?",
+            "answer": [
+                "Random Forests reduce variance primarily by averaging together a number of very weakly correlated (if not completely uncorrelated) trees (since they trained on a subset of whole traing data).",
+                "Hyperparameters like max_features and min_samples_leaf are among the techniques useful in reducing this correlation between trees, but they often come at the cost of some increase in bias."
+            ]
+        }
     ]
 }
