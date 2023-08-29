@@ -1,0 +1,52 @@
+{
+    "Subtopic": "Ensembled Method",
+    "Questions": [
+        {
+            "name": "What is ensemble learning?",
+            "answer": [
+                "Ensemble learning is a general meta approach to machine learning that seeks better predictive performance by combining the predictions from multiple models."
+            ]
+        },
+        {
+            "name": "What is bagging?",
+            "answer": [
+                "Bagging is a method to fit the same model many times to bootstrap samples of the training data and average the predictions.",
+                "Bootstrap is a method to resample a dataset by randomly drawing observations from the dataset with replacement.",
+                "Key features: 1. Bootstrap training data to generate multiple datasets. 2. Fit the same model(unpruned decision trees) to each dataset. 3. Simple voting or averaging of predictions."
+            ]
+        },
+        {
+            "name": "What is boosting?",
+            "answer": [
+                "Boosting is a method to fit the same model many times to reweighted versions of the training data and average the predictions.",
+                "The reweighting is such that observations that are difficult to predict receive greater weight.",
+                "Key features: 1. Bias training data toward those examples that are hard to predict. 2. Iteratively(Sequentially) add ensemble members to correct predictions of prior models. 3. Combine predictions using a weighted average of models."
+            ]
+        },
+        {
+            "name": "What is stacking?",
+            "answer": [
+                "Stacking is a method to fit multiple models to the training data and use a meta-model to average the predictions.",
+                "Key features: 1. Fit multiple diverse models to the training data. 2. Combine predictions using a meta-model."
+            ]
+        },
+        {
+            "name": "What are pros of ensemble learning?",
+            "answer": [
+                "Ensemble methods are more robust than single estimators, have improved generalizability.",
+                "hey can also reduce the risk of overfitting and underfitting by balancing the trade-off between bias and variance, and by using different subsets and features of the data."
+            ]
+        },
+        {
+            "name": "What are cons of ensemble learning?",
+            "answer": [
+                "Ensemble methods are more complex, harder to interpret, and more resource-intensive.",
+                "They may be very dependent on the base models' complexity, which may lead to overfitting or underfitting.",
+                "They are difficult to scale, making it time- and memory-consuming.",
+                "They are difficult to interpret, as they involve multiple layers of abstraction and aggregation."
+            ]
+        }
+
+    ]
+
+}
